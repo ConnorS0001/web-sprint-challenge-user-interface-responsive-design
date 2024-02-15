@@ -56,6 +56,8 @@ html {
     min-width: 428px;
     width: 100%;
     font-size: 62.5%;
+    /* my code: font color */ 
+    color: white;
 }
 
 body {
@@ -69,6 +71,7 @@ h1, h2, h3, h4, h5, h6, p, a, i {
 
 h1 {
     font-size: 7.5rem;
+    text-align: center;
 }
 
 h2 {
@@ -81,6 +84,10 @@ h3 {
 
 p, a {
     font-size: 3rem;
+
+    /* my code */
+
+    color: white;
 }
 
 /* header section */
@@ -91,7 +98,22 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
 }
+
+    /* my code */
+
+.headerNavLinks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.header-row {
+    width: 100%;
+}
+    /* my code */
 
 /* spacers */
 .spacer {
@@ -111,6 +133,23 @@ header {
     height: 100vh;
     text-align: center;
     background-color: rgb(0, 4, 17);
+
+    /* my code  */
+    
+}
+
+/* my code */
+.gallery-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-flex div {
+    width: 30%;
+    margin: 2% 0;
 }
 
 /* about us section */
@@ -138,7 +177,9 @@ header {
 }
 
 .about-container .text {
-    width: 50%;
+    width: 0%;
+
+    /*NOTE: SWITCH WIDTH TO 50%*/
 }
 
 /* contact us section */
@@ -191,9 +232,18 @@ header {
 /* footer section */
 footer {
     width: 100%;
-    height: 15vh;
+    height: 30vh;
+
+    /*NOTE: 15vh originally */
     padding-top: 2.5vh;
     font-size: 3rem;
+    background-color: black;
+}
+
+.copyright {
+    font-size: 1.5rem;
+    text-align: end;
+    margin: 3% 10%;
 }
 
 /* mobile media query */
